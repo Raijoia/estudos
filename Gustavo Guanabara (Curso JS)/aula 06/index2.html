@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu primeiro programa...</title>
+    <style>
+      body {
+        background-color: rgb(105, 105, 173);
+        color: white;
+        font: normal 20pt Arial;
+      }
+      h1 {
+        color: rgb(255, 212, 22);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição</p>
+    <script>
+      var n1 = Number(window.prompt('Digite um número: ')); // string, apos colocar o Number.parseInt o resultado virou um número inteiro, com o parseFloat o resultado aceitará um numero decimal, se colocar apenas Number o JS decide qual a melhor decisão tomar automaticamente, podemos mudar para string apenas usando String ao invés de Number.
+      var n2 = Number(window.prompt('Digite outro número: ')); // string, apos colocar o Number.parseInt o resultado virou um número inteiro, com o parseFloat o resultado aceitará um numero decimal, se colocar apenas Number o JS decide qual a melhor decisão tomar automaticamente, podemos mudar para string apenas usando String ao invés de Number.
+      var s = n1 + n2;
+      window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}!`);
+      // (String + String) concatenação
+      // (Number + Number) Adição
+    </script>
+  </body>
+</html>
