@@ -19,21 +19,22 @@
         <div id="msg">Clique em mim</div>
         <script>
           // por marca, h1, h2, h3, p, navigation, a, etc..
+          // getElementsByTagName(nomeDaTag)
           var p1 = document.getElementsByTagName('p')[0] // a conta começa do 0
           var corpo = document.body
            document.write('Está escrito assim: ' + p1.innerText)
           
-          // por ID getElementById()
+          // por ID getElementById(nomeDoId)
 
           var d = document.getElementById('msg')
             d.style.background = 'green'
 
-          // por nome getElementsByName()
+          // por nome getElementsByName(nomeDaName)
 
           var e = document.getElementsByName('e')[0]
             e.style.background = 'blue'
 
-          // por classe getElementsByClassName()
+          // por classe getElementsByClassName(nomeDaClass)
 
           var or = document.getElementsByClassName('class')[0]
             or.style.background = 'red'
