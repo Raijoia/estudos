@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div#area {
+      font: normal 15pt arial;
+      background: green;
+      color: white;
+      width: 200px;
+      height: 200px;
+      line-height: 200px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!--- quando clicar em cima da div, o evento irar desparar, para fazer um efeito colocar onEvento="evento()" no HTML-->
+  <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+    Interaja...
+  </div>
+
+  <script>
+    // function evento() {abre o bloco de código que será executado quando ocorrer o evento}
+    // poderia colocar a variável fora da função usando apenas uma função mas futuramente pode dar problema de scopo
+    
+    // Aqui é uma forma de colocar o evento no JS direto, deixando o html mais limpo, basta colocar ID.addEventListener('nomaDoEventoSemOn', evento), mas na função ainda precisa usar evento()
+    
+    //area.addEventListener('click', clicar)
+    //area.addEventListener('mouseenter', entrar)
+    //area.addEventListener('mouseout', sair)
+
+    function clicar(){
+      var area = document.getElementById('area');
+      area.innerText = 'Clicou!'
+      area.style.background = 'red'
+    }
+    function entrar(){
+      var entrar = document.getElementById('area');
+      area.innerText = 'Entrou!'
+    }
+    function sair(){
+      var sair = document.getElementById('area');
+      area.innerText = 'Saiu!'
+      area.style.background = 'green'
+    }
+  </script>
+</body>
+</html>
