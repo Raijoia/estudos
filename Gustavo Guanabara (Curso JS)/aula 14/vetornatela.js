@@ -6,6 +6,8 @@ for(let pos=0; pos<valores.length; pos++) {
 }
 */
 
+
+// usado apenas em arrays
 for(let pos in valores) {
   console.log(valores[pos])
   console.log(pos)
