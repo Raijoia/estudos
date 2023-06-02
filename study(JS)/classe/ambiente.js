@@ -13,10 +13,10 @@ livro.anunciar()
 
 const livro = function (nome, editora, paginas) {
     // adicionando variáveis para guardar os valores dos parâmetros em objetos
-    ;(gNome = nome), (gEditora = editora), (gPaginas = paginas)
+    (gNome = nome), (gEditora = editora), (gPaginas = paginas)
 
     this.getNome = function () {
-        // serve para pegar o valor do objeto no console log, o nome depôs do this pode ser oque vc quiser.
+        // serve para pegar o valor do objeto no console log, o nome depois do this pode ser oque vc quiser.
         return gNome
     }
     this.getEditora = function () {
