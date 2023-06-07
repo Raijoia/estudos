@@ -1,5 +1,6 @@
 // Para funcionar o arquivo precisa ser considerado um módulo, fiz isso criando um arquivo .json pelo terminal powershell usando o comando npm init
 // esse arquivo pode ser criado manualmente também, criando um arquivo .json com nome package.json
+// no arquivo html, na hora de importar o arquivo .js, colocar antes do src o type="module"
 
 /*
 Esse é o código que deve contar no arquivo package.json
