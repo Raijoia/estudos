@@ -27,5 +27,5 @@ console.log(found[1])
 console.log(found[2])
 
 if (regExp1) {
-    console.log(regExp1.test(texto)) // continua o código caso nãe ache nenhuma das opções no 'ou'
+    console.log(regExp1.test(texto)) // continua o código caso não ache nenhuma das opções no 'ou'
 }
