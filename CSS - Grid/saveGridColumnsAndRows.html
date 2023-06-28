@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+</head>
+<body>
+  <div>
+    <header></header>
+    <main></main>
+    <aside></aside>
+    <footer></footer>
+  </div>
+</body>
+<style>
+  div {
+    background: black;
+    height: 100vh;
+    
+    /* definindo o display grid */
+    display: grid;
+
+    /* Dizendo quantas colunas tem */
+    grid-template-columns: 1fr 1fr;
+
+    /* Dizendo quantas linhas tem */
+    grid-template-rows: 1fr 2fr 1fr;
+  }
+
+  header {
+    background: red;
+
+    /* Definindo em que lugar da coluna irá ficar */
+    grid-column: 1 / 3;
+
+    /* Definindo em que lugar da linha irá ficar */
+    grid-row: 1 / 2;
+  }
+
+  main {
+    background: blue;
+
+    /* Definindo em que lugar da coluna irá ficar */
+    grid-column: 2 / 3;
+
+    /* Definindo em que lugar da linha irá ficar */
+    grid-row: 2 / 4;
+  }
+
+  aside {
+    background: yellow;
+  }
+
+  footer {
+    background: purple;
+
+    /* Definindo em que lugar da linha irá ficar */
+    grid-row: 2 / 3;
+  }
+</style>
+</html>

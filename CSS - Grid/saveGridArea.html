@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+</head>
+<body>
+  <div>
+    <header></header>
+    <main></main>
+    <aside></aside>
+    <footer></footer>
+  </div>
+</body>
+<style>
+  div {
+    background: black;
+    
+    /* definindo o display grid */
+    display: grid;
+
+    /* Definindo minhas colunas e linhas em 3x3 */
+    grid-template-areas:
+    "header header header"
+    "main main aside"
+    "footer footer footer"
+    ;
+  }
+
+  header {
+    background: red;
+    height: 100px;
+
+    /* dizendo para o grid que esse é o header */
+    grid-area: header;
+  }
+
+  main {
+    background: blue;
+    height: 400px;
+
+    /* dizendo para o grid que esse é o main */
+    grid-area: main;
+  }
+
+  aside {
+    background: yellow;
+    height: 400px;
+
+    /* dizendo para o grid que esse é o aside */
+    grid-area: aside;
+  }
+
+  footer {
+    background: purple;
+    height: 100px;
+
+    /* dizendo para o grid que esse é o footer */
+    grid-area: footer;
+  }
+</style>
+</html>
